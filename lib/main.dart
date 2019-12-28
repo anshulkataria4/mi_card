@@ -20,47 +20,74 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/joaquin.jpg'),
               ),
               Text(
-                'Joaquin Phoenix',
+                'Sachin Naag',
                 style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 35,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.5
-                ),
+                    fontFamily: 'Montserrat',
+                    fontSize: 35,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5),
+              ),
+              SizedBox(
+                height: 5,
               ),
               Text(
                 'ACTOR/DIRECTOR',
                 style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontSize: 25,
-                  color: Colors.white,
-                  letterSpacing: 2.5
-                ),
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2.5),
               ),
-              Container(
-                padding: EdgeInsets.all(7),
-                color: Colors.white,
+              Card(
+                  color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  child: Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
+                          size: 40,
+                          color: Colors.blueGrey,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          '+65 8111 6678',
+                          style: TextStyle(
+                            color: Colors.blueGrey,
+                            fontFamily: 'Montserret',
+                            fontSize: 20,
+                            letterSpacing: 2,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
+              Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 2, horizontal: 20),
                   child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    size: 40,
-                    color: Colors.blueGrey,
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    '+65 8111 6678',
-                    style: TextStyle(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        size: 40,
                         color: Colors.blueGrey,
-                        fontFamily: 'Montserret',
-                        fontSize: 20),
-                  )
-                ],
-              ))
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'sachin_naag@yahoo.com',
+                        style: TextStyle(
+                            color: Colors.blueGrey,
+                            fontFamily: 'Montserret',
+                            fontSize: 25),
+                      )
+                    ],
+                  ))
             ],
           ),
         ),
