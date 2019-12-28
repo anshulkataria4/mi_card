@@ -40,54 +40,43 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5),
               ),
               Card(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                  child: Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.phone,
-                          size: 40,
-                          color: Colors.blueGrey,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          '+65 8111 6678',
-                          style: TextStyle(
-                            color: Colors.blueGrey,
-                            fontFamily: 'Montserret',
-                            fontSize: 20,
-                            letterSpacing: 2,
-                          ),
-                        )
-                      ],
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 40,
+                    color: Colors.blueGrey,
+                  ),
+                  title: Text(
+                    '+65 8111 6678',
+                    style: TextStyle(
+                      color: Colors.blueGrey,
+                      fontFamily: 'Montserret',
+                      fontSize: 20,
+                      letterSpacing: 2,
                     ),
-                  )),
+                  ),
+                ),
+              ),
               Card(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 2, horizontal: 20),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        size: 40,
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 2, horizontal: 20),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 40,
+                    color: Colors.blueGrey,
+                  ),
+                  title: Text(
+                    'sachin_naag@yahoo.com',
+                    style: TextStyle(
                         color: Colors.blueGrey,
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        'sachin_naag@yahoo.com',
-                        style: TextStyle(
-                            color: Colors.blueGrey,
-                            fontFamily: 'Montserret',
-                            fontSize: 25),
-                      )
-                    ],
-                  ))
+                        fontFamily: 'Montserret',
+                        fontSize: 25),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
